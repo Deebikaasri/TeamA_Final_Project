@@ -25,16 +25,19 @@ The project focuses on training intent classification and entity recognition mod
 - GitHub
 
 ## 📂 Project Structure
+
+```
 TeamA_Final_Project/
 │
-├── data/ # Training and testing datasets
-├── prompts/ # Prompt files for NLU
-├── app.py # Main application file
-├── intent_classifier.py # Intent classification logic
-├── evaluator_model.py # Model evaluation logic
-├── requirements.txt # Project dependencies
-├── README.md # Project documentation
-└── LICENSE # MIT License
+├── data/                 # Training and testing datasets
+├── prompts/              # Prompt files for NLU
+├── app.py                # Main application file
+├── intent_classifier.py  # Intent classification logic
+├── evaluator_model.py    # Model evaluation logic
+├── requirements.txt      # Project dependencies
+├── README.md             # Project documentation
+└── LICENSE               # MIT License
+```
 
 ## How to Use
 1. Clone the repository
