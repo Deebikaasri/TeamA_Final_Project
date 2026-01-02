@@ -24,7 +24,8 @@ The project focuses on training intent classification and entity recognition mod
 - Machine Learning / NLP
 - GitHub
 
-## Project Structure
+## 📂 Project Structure
+
 TeamA_Final_Project/
 │
 ├── data/ # Training and testing datasets
