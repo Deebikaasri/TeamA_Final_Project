@@ -1,0 +1,252 @@
+{
+  "eval_data": [
+    {
+      "intent": "greet_user",
+      "examples": [
+        "Hi there, how are you?",
+        "Good morning assistant!",
+        "Hey, what's up?"
+      ]
+    },
+    {
+      "intent": "exit_chat",
+      "examples": [
+        "I need to leave now",
+        "Close this chat, please",
+        "Bye, see you later"
+      ]
+    },
+    {
+      "intent": "express_gratitude",
+      "examples": [
+        "Thanks a lot for your help!",
+        "I really appreciate it",
+        "Much obliged"
+      ]
+    },
+    {
+      "intent": "weather_query",
+      "examples": [
+        "Is it going to rain today in Delhi?",
+        "What's the temperature in Bangalore?",
+        "Tell me if tomorrow is sunny"
+      ]
+    },
+    {
+      "intent": "travel_booking",
+      "examples": [
+        "Book a train ticket to Mumbai",
+        "I need a flight to Jaipur next week",
+        "Plan a trip to Hyderabad"
+      ]
+    },
+    {
+      "intent": "food_request",
+      "examples": [
+        "Order me some pizza",
+        "I want to eat a burger",
+        "Get me a cake from nearby shop"
+      ]
+    },
+    {
+      "intent": "news_update",
+      "examples": [
+        "Show me top news today",
+        "Any updates from the world?",
+        "Latest headlines please"
+      ]
+    },
+    {
+      "intent": "reminder_set",
+      "examples": [
+        "Remind me to call mom at 6 PM",
+        "Set a reminder for tomorrow morning",
+        "Alert me next Monday at 9 AM"
+      ]
+    },
+    {
+      "intent": "music_request",
+      "examples": [
+        "Play relaxing music",
+        "Start workout playlist",
+        "I want jazz songs"
+      ]
+    },
+    {
+      "intent": "time_query",
+      "examples": [
+        "What time is it right now?",
+        "Give me current time",
+        "Time please"
+      ]
+    },
+    {
+      "intent": "date_query",
+      "examples": [
+        "What's the date today?",
+        "Tell me today's date",
+        "Which day is it?"
+      ]
+    },
+    {
+      "intent": "joke_request",
+      "examples": [
+        "Tell me something funny",
+        "Make me laugh",
+        "I want a joke"
+      ]
+    },
+    {
+      "intent": "cab_request",
+      "examples": [
+        "Book a cab to office",
+        "I need a taxi to airport",
+        "Call a cab for me"
+      ]
+    },
+    {
+      "intent": "definition_query",
+      "examples": [
+        "Explain AI in simple terms",
+        "What does deep learning mean?",
+        "Define blockchain for me"
+      ]
+    },
+    {
+      "intent": "math_addition",
+      "examples": [
+        "Add 12 and 18",
+        "What's 45 plus 55?",
+        "Calculate sum of 20 and 30"
+      ]
+    },
+    {
+      "intent": "holiday_query",
+      "examples": [
+        "Is Friday a holiday?",
+        "Any holidays this month?",
+        "Next public holiday details please"
+      ]
+    },
+    {
+      "intent": "location_query",
+      "examples": [
+        "Where am I currently?",
+        "Show my location",
+        "Detect current place"
+      ]
+    },
+    {
+      "intent": "assistant_info",
+      "examples": [
+        "Who built you?",
+        "Tell me about yourself",
+        "What can you do?"
+      ]
+    },
+    {
+      "intent": "contact_query",
+      "examples": [
+        "Give customer support contact",
+        "How can I reach helpdesk?",
+        "Share office phone number"
+      ]
+    },
+    {
+      "intent": "fact_request",
+      "examples": [
+        "Tell a fun science fact",
+        "Give me a random fact",
+        "Interesting fact please"
+      ]
+    },
+    {
+      "intent": "exercise_request",
+      "examples": [
+        "Suggest exercises for today",
+        "I want a workout plan",
+        "Give me fitness tips"
+      ]
+    },
+    {
+      "intent": "movie_request",
+      "examples": [
+        "Recommend a good movie",
+        "Suggest a film to watch",
+        "What movie should I see tonight?"
+      ]
+    },
+    {
+      "intent": "shopping_request",
+      "examples": [
+        "Order a laptop online",
+        "I need to buy groceries",
+        "Add a phone to cart"
+      ]
+    },
+    {
+      "intent": "currency_conversion",
+      "examples": [
+        "Convert 200 USD to INR",
+        "How much is 100 EUR in USD?",
+        "Exchange 50 GBP to JPY"
+      ]
+    },
+    {
+      "intent": "alarm_set",
+      "examples": [
+        "Set an alarm for 6 AM",
+        "Wake me up at 7 AM tomorrow",
+        "Add alarm at 5 PM"
+      ]
+    },
+    {
+      "intent": "todo_add",
+      "examples": [
+        "Add 'finish homework' to my todo",
+        "Remind me to call mom",
+        "Put 'email boss' in todo list"
+      ]
+    },
+    {
+      "intent": "todo_show",
+      "examples": [
+        "Show my pending tasks",
+        "What are my todos today?",
+        "List my reminders"
+      ]
+    },
+    {
+      "intent": "alarm_query",
+      "examples": [
+        "List all alarms set",
+        "Do I have any alarms?",
+        "Show next alarm"
+      ]
+    },
+    {
+      "intent": "book_hotel",
+      "examples": [
+        "Book a hotel in Jaipur",
+        "I need a room in Delhi tomorrow",
+        "Reserve hotel in Mumbai"
+      ]
+    },
+    {
+      "intent": "flight_status",
+      "examples": [
+        "Check status of flight DL123",
+        "Is flight AI101 on time?",
+        "Track BA256 flight"
+      ]
+    },
+    {
+      "intent": "currency_rate",
+      "examples": [
+        "Current USD to INR rate?",
+        "Exchange rate for EUR today",
+        "How much is 1 GBP in INR?"
+      ]
+    }
+  ]
+}
