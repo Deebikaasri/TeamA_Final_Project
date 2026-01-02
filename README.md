@@ -10,6 +10,8 @@ The project focuses on training intent classification and entity recognition mod
 - Vimalraj
 - Ashutosh
 - Archana
+- karthikreddy
+- sathwiksandesh
 
 ## Features
 - NLU model training
