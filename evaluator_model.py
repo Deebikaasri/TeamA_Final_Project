@@ -1,34 +1,29 @@
+from pathlib import Path
 import json
-from sklearn.metrics import accuracy_score, precision_recall_fscore_support, confusion_matrix
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
 from intent_classifier import classify_intent
 
-def evaluate_model(eval_file="eval_data.json"):
-    with open(eval_file, "r", encoding="utf-8") as f:
-        eval_data = json.load(f)["eval_data"]
+BASE_DIR = Path(__file__).parent
+EVAL_PATH = BASE_DIR / "data" / "eval_dataset.json"
 
-    true_intents = []
-    predicted_intents = []
 
-    for item in eval_data:
-        intent_name = item["intent"]
-        for example in item["examples"]:
-            true_intents.append(intent_name)
-            result = classify_intent(example)
-            predicted_intents.append(result["intent"])
+def run_evaluation():
+    with open(EVAL_PATH, encoding="utf-8") as f:
+        data = json.load(f)
 
-    accuracy = accuracy_score(true_intents, predicted_intents)
-    precision, recall, f1, _ = precision_recall_fscore_support(
-        true_intents, predicted_intents, average="weighted", zero_division=0
-    )
+    texts = [item["text"] for item in data]
+    y_true = [item["intent"] for item in data]
+    y_pred = [classify_intent(t)["intent"] for t in texts]
 
-    cm = confusion_matrix(true_intents, predicted_intents)
-    labels = sorted(list(set(true_intents)))
+    accuracy = accuracy_score(y_true, y_pred)
+    report = classification_report(y_true, y_pred, output_dict=True)
+    labels = sorted(set(y_true))
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
 
     return {
         "accuracy": accuracy,
-        "precision": precision,
-        "recall": recall,
-        "f1": f1,
-        "confusion_matrix": cm,
+        "report": report,
+        "confusion_matrix": cm.tolist(),
         "labels": labels
     }

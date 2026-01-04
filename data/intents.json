@@ -1,0 +1,206 @@
+[
+  {
+    "intent": "book_flight",
+    "examples": [
+      "book a flight from chennai to delhi tomorrow",
+      "i need a flight ticket to mumbai next week",
+      "help me find a flight to bangalore tonight"
+    ]
+  },
+  {
+    "intent": "cancel_flight",
+    "examples": [
+      "cancel my flight booking",
+      "i want to cancel tonight's flight",
+      "please cancel my ticket to delhi"
+    ]
+  },
+  {
+    "intent": "check_flight_status",
+    "examples": [
+      "what is the status of my flight",
+      "is my flight delayed",
+      "check the status of my flight to mumbai"
+    ]
+  },
+  {
+    "intent": "book_hotel",
+    "examples": [
+      "book a hotel room in chennai for tomorrow",
+      "i need a hotel in bangalore next weekend",
+      "find me a budget hotel in delhi"
+    ]
+  },
+  {
+    "intent": "cancel_hotel",
+    "examples": [
+      "cancel my hotel booking",
+      "i want to cancel the room reservation",
+      "please cancel my hotel in mumbai"
+    ]
+  },
+  {
+    "intent": "book_cab",
+    "examples": [
+      "book a cab to the airport",
+      "i need a taxi from home to office",
+      "arrange a cab from chennai central to adyar"
+    ]
+  },
+  {
+    "intent": "cancel_cab",
+    "examples": [
+      "cancel my cab booking",
+      "please cancel the ride",
+      "i don't need the taxi anymore"
+    ]
+  },
+  {
+    "intent": "order_food",
+    "examples": [
+      "order a pizza for me",
+      "i am hungry order biryani",
+      "get me a burger and fries tonight"
+    ]
+  },
+  {
+    "intent": "track_food_order",
+    "examples": [
+      "where is my food order",
+      "track my pizza order",
+      "is my biryani order on the way"
+    ]
+  },
+  {
+    "intent": "cancel_food_order",
+    "examples": [
+      "cancel my food order",
+      "i don't want the pizza now",
+      "please cancel the order i just placed"
+    ]
+  },
+  {
+    "intent": "check_weather",
+    "examples": [
+      "what is the weather in chennai",
+      "will it rain tomorrow in bangalore",
+      "tell me today's temperature in delhi"
+    ]
+  },
+  {
+    "intent": "get_news",
+    "examples": [
+      "show me the latest news",
+      "what are today's headlines",
+      "any important news updates now"
+    ]
+  },
+  {
+    "intent": "set_alarm",
+    "examples": [
+      "set an alarm for 6 am tomorrow",
+      "wake me up at 7 in the morning",
+      "set an alarm for 5 30 am"
+    ]
+  },
+  {
+    "intent": "set_reminder",
+    "examples": [
+      "remind me to study at 8 pm",
+      "set a reminder for my meeting tomorrow",
+      "remind me to call my friend this evening"
+    ]
+  },
+  {
+    "intent": "create_todo",
+    "examples": [
+      "add buy groceries to my todo list",
+      "add finish project report to my tasks",
+      "create a task to pay electricity bill"
+    ]
+  },
+  {
+    "intent": "check_todo",
+    "examples": [
+      "show my tasks",
+      "what is on my todo list",
+      "list all my pending tasks"
+    ]
+  },
+  {
+    "intent": "check_time",
+    "examples": [
+      "what time is it now",
+      "tell me the current time",
+      "what is the time in chennai"
+    ]
+  },
+  {
+    "intent": "check_date",
+    "examples": [
+      "what is today's date",
+      "tell me the date today",
+      "which day is it today"
+    ]
+  },
+  {
+    "intent": "greeting",
+    "examples": [
+      "hi",
+      "hello there",
+      "good morning",
+      "hey bot"
+    ]
+  },
+  {
+    "intent": "goodbye",
+    "examples": [
+      "bye",
+      "see you later",
+      "good night",
+      "talk to you soon"
+    ]
+  },
+  {
+    "intent": "thanks",
+    "examples": [
+      "thank you",
+      "thanks a lot",
+      "that's helpful thanks",
+      "appreciate your help"
+    ]
+  },
+  {
+    "intent": "help",
+    "examples": [
+      "what can you do",
+      "how can you help me",
+      "i need some help",
+      "show me your features"
+    ]
+  },
+  {
+    "intent": "small_talk_how_are_you",
+    "examples": [
+      "how are you",
+      "how is it going",
+      "how are you doing today"
+    ]
+  },
+  {
+    "intent": "small_talk_who_are_you",
+    "examples": [
+      "who are you",
+      "tell me about yourself",
+      "what are you"
+    ]
+  },
+  {
+    "intent": "fallback",
+    "examples": [
+      "random text that makes no sense",
+      "blah blah blah",
+      "i don't know what to say"
+    ]
+  }
+]

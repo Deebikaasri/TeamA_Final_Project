@@ -1,0 +1,62 @@
+[
+  { "text": "book a flight to mumbai tomorrow morning", "intent": "book_flight" },
+  { "text": "help me book a flight from chennai to delhi next week", "intent": "book_flight" },
+  { "text": "please cancel my flight ticket to delhi", "intent": "cancel_flight" },
+  { "text": "i don't want tonight's flight anymore cancel it", "intent": "cancel_flight" },
+  { "text": "is my flight to bangalore delayed", "intent": "check_flight_status" },
+  { "text": "check the status of my flight to mumbai", "intent": "check_flight_status" },
+
+  { "text": "i need a hotel in chennai for tonight", "intent": "book_hotel" },
+  { "text": "book a budget hotel in bangalore for this weekend", "intent": "book_hotel" },
+  { "text": "cancel my hotel reservation in mumbai", "intent": "cancel_hotel" },
+  { "text": "please cancel the room i booked for tomorrow", "intent": "cancel_hotel" },
+
+  { "text": "book a cab from central station to adyar", "intent": "book_cab" },
+  { "text": "i need a taxi from home to office at 9 am", "intent": "book_cab" },
+  { "text": "cancel my cab booking", "intent": "cancel_cab" },
+  { "text": "i don't need the taxi anymore please cancel it", "intent": "cancel_cab" },
+
+  { "text": "order chicken biryani for dinner", "intent": "order_food" },
+  { "text": "i want to order a pizza and coke", "intent": "order_food" },
+  { "text": "where is my pizza order now", "intent": "track_food_order" },
+  { "text": "track my food order it is taking too long", "intent": "track_food_order" },
+  { "text": "cancel the food order i placed just now", "intent": "cancel_food_order" },
+
+  { "text": "will it rain today in bangalore", "intent": "check_weather" },
+  { "text": "what is the weather like in chennai tomorrow", "intent": "check_weather" },
+  { "text": "show me today's top news", "intent": "get_news" },
+  { "text": "any important news updates right now", "intent": "get_news" },
+
+  { "text": "set an alarm for 6 am tomorrow", "intent": "set_alarm" },
+  { "text": "wake me up at 5 30 in the morning", "intent": "set_alarm" },
+  { "text": "remind me to study at 8 pm", "intent": "set_reminder" },
+  { "text": "set a reminder for my project review tomorrow", "intent": "set_reminder" },
+
+  { "text": "add buy groceries to my todo list", "intent": "create_todo" },
+  { "text": "create a task to pay electricity bill", "intent": "create_todo" },
+  { "text": "show all my pending tasks", "intent": "check_todo" },
+  { "text": "what is on my todo list today", "intent": "check_todo" },
+
+  { "text": "what time is it in chennai now", "intent": "check_time" },
+  { "text": "tell me the current time please", "intent": "check_time" },
+  { "text": "what is today's date", "intent": "check_date" },
+  { "text": "tell me the date today", "intent": "check_date" },
+
+  { "text": "hi there", "intent": "greeting" },
+  { "text": "hello good morning", "intent": "greeting" },
+  { "text": "okay bye see you later", "intent": "goodbye" },
+  { "text": "good night talk to you tomorrow", "intent": "goodbye" },
+
+  { "text": "thanks for your help", "intent": "thanks" },
+  { "text": "thank you that was useful", "intent": "thanks" },
+  { "text": "i need some help what can you do", "intent": "help" },
+  { "text": "how can you help me with my tasks", "intent": "help" },
+
+  { "text": "how are you doing today", "intent": "small_talk_how_are_you" },
+  { "text": "hey how is it going", "intent": "small_talk_how_are_you" },
+  { "text": "who are you and what can you do", "intent": "small_talk_who_are_you" },
+  { "text": "tell me about yourself", "intent": "small_talk_who_are_you" },
+
+  { "text": "kjasdhkjashd jkashd", "intent": "fallback" },
+  { "text": "blah blah random text", "intent": "fallback" }
+]

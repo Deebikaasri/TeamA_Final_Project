@@ -1,49 +1,55 @@
-# BotTrainer
-## NLU Model Trainer and Evaluator for Chatbots
+# 🤖 BotTrainer – NLU Model Demo
 
-## Project Description
-BotTrainer is an NLU (Natural Language Understanding) model trainer and evaluator designed for chatbots.  
-The project focuses on training intent classification and entity recognition models and evaluating their performance to improve chatbot accuracy and reliability.
+## Overview
+This repository contains an **individual implementation** of an NLU (Natural Language Understanding)
+system for chatbot intent classification and entity extraction.
 
-## Team Members
-- Deebikaasri S (Team Lead)
-- Vimalraj
-- Ashutosh
-- Archana
-- karthikreddy
-- sathwiksandesh
+The project is pushed to a **group repository only for evaluation and presentation purposes**.
+Development and implementation were done individually.
 
 ## Features
-- NLU model training
 - Intent classification
-- Entity recognition
-- Model evaluation and performance analysis
+- Entity extraction
+- Streamlit-based UI
+- Model evaluation with accuracy and confusion matrix
 
-## Technologies Used
+## Tech Stack
 - Python
-- Machine Learning / NLP
-- GitHub
+- Streamlit
+- Scikit-learn
+- Pandas
+- Matplotlib / Seaborn
 
-## 📂 Project Structure
+## Project Structure
+nlu-chatbot/
+├── app.py
+├── intent_classifier.py
+├── evaluator_model.py
+├── data/
+│ ├── intents.json
+│ └── eval_dataset.json
+├── requirements.txt
+└── README.md
 
-```
-TeamA_Final_Project/
-│
-├── data/                 # Training and testing datasets
-├── prompts/              # Prompt files for NLU
-├── app.py                # Main application file
-├── intent_classifier.py  # Intent classification logic
-├── evaluator_model.py    # Model evaluation logic
-├── requirements.txt      # Project dependencies
-├── README.md             # Project documentation
-└── LICENSE               # MIT License
-```
 
-## How to Use
-1. Clone the repository
-2. Install required dependencies
-3. Run the training script
-4. Evaluate the model using test data
+## Run Instructions
+```bash
+pip install -r requirements.txt
+streamlit run app.py
 
-## License
-This project is licensed under the MIT License.
+Contribution Note
+
+This is an individual project.
+The team collaboration applies only to problem understanding and presentation, not to code development.
+
+
+---
+
+# 🔥 NOW DO THIS — EXACT ORDER (NO SHORTCUTS)
+
+```bat
+git add app.py
+git add intent_classifier.py
+git add evaluator_model.py
+git add requirements.txt
+git add README.md

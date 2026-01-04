@@ -1,42 +1,69 @@
 import streamlit as st
 import pandas as pd
-from intent_classifier import classify_intent
-from evaluate_model import evaluate_model
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["NLU Tester", "Model Evaluation"])
+from intent_classifier import classify_intent, extract_entities
+from evaluator_model import run_evaluation
 
-if page == "NLU Tester":
-    st.title("🤖 BotTrainer NLU Demo")
+st.set_page_config(page_title="BotTrainer", page_icon="🤖", layout="wide")
 
-    user_input = st.text_input("Enter your message:")
+st.title("🤖 BotTrainer – NLU Demo")
+st.write("Individual NLU implementation submitted under team evaluation.")
 
-    if user_input:
-        result = classify_intent(user_input)
+tab_test, tab_eval = st.tabs(["🔍 Live Test", "📊 Evaluation"])
 
-        st.write("**Predicted Intent:**", result.get("intent"))
-        st.write("**Confidence:**", result.get("confidence"))
+# ---------- Live Test ----------
+with tab_test:
+    st.subheader("Test a user message")
 
-        st.write("**Entities:**")
-        st.json(result.get("entities"))
+    text = st.text_area(
+        "Enter a message",
+        "book a flight from chennai to delhi tomorrow at 6 am",
+        height=100
+    )
 
-elif page == "Model Evaluation":
-    st.title("📊 Model Evaluation")
+    if st.button("Analyze"):
+        intent_result = classify_intent(text)
+        entity_result = extract_entities(text)
 
-    if st.button("▶ Run Evaluation"):
-        results = evaluate_model("eval_data.json")
+        col1, col2 = st.columns(2)
 
-        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            st.metric("Intent", intent_result["intent"])
+            st.metric("Confidence", f"{intent_result['confidence']*100:.1f}%")
 
-        col1.metric("Accuracy", f"{results['accuracy']*100:.2f}%")
-        col2.metric("Precision", f"{results['precision']*100:.2f}%")
-        col3.metric("Recall", f"{results['recall']*100:.2f}%")
-        col4.metric("F1 Score", f"{results['f1']*100:.2f}%")
+        with col2:
+            st.subheader("Entities")
+            st.json(entity_result)
+
+# ---------- Evaluation ----------
+with tab_eval:
+    st.subheader("Evaluate model on test dataset")
+
+    if st.button("Run Evaluation"):
+        results = run_evaluation()
+
+        st.metric("Accuracy", f"{results['accuracy']*100:.2f}%")
+
+        report_df = (
+            pd.DataFrame(results["report"])
+            .T.reset_index()
+            .rename(columns={"index": "Intent"})
+        )
+        st.dataframe(report_df, use_container_width=True)
 
         st.subheader("Confusion Matrix")
-        cm_df = pd.DataFrame(
+        fig, ax = plt.subplots()
+        sns.heatmap(
             results["confusion_matrix"],
-            index=results["labels"],
-            columns=results["labels"]
+            annot=True,
+            fmt="d",
+            xticklabels=results["labels"],
+            yticklabels=results["labels"],
+            cmap="Blues",
+            ax=ax
         )
-        st.dataframe(cm_df)
+        ax.set_xlabel("Predicted")
+        ax.set_ylabel("Actual")
+        st.pyplot(fig)
